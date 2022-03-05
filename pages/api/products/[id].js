@@ -40,8 +40,8 @@ export default async function handler(req, res) {
     //   return res.status(401).json("Not authenticated!");
     // }
     try {
-      const product = await Product.create(req.body);
-      res.status(201).json(product);
+      await Product.findByIdAndDelete(id);
+      res.status(200).json("The product has beemn deleted!");
     } catch (err) {
       res.status(500).json(err);
     }
