@@ -6,7 +6,12 @@
 .left {
   flex: 2;
 }
-
+.input,
+.textarea {
+  font-size: 0.94rem;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
 .table {
   width: 100%;
   text-align: left;
@@ -78,7 +83,7 @@
   color: teal;
   font-weight: bold;
   margin-top: 20px;
-  cursor: not-allowed;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
